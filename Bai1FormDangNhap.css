@@ -1,0 +1,104 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #689fad;
+    min-height: 100vh;
+}
+
+.container {
+    width: 500px;
+    min-height: 200px;
+    background-color: #689fad;
+    border: 3px solid gray;
+    border-radius: 15px;
+}
+
+.container::before {
+    content: 'FORM ĐĂNG NHẬP';
+    position: absolute;
+    top: 230px;
+    left: 555px;
+    font-size: 25px;
+    font-weight: bold;
+    color: seagreen;
+    background-color: #689fad;
+    padding: 10px 20px;
+}
+
+.content {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+input {
+    width: 70%;
+    padding: 6px 25px;
+    border-radius: 10px;
+    border: 2px solid #4b747f;
+    margin-bottom: 10px;
+}
+
+#message {
+    color: red;
+    text-align: center;
+}
+
+.btn #btn:hover {
+    cursor: pointer;
+    background-color: black;
+}
+
+.btn #btn:hover a {
+    color: aqua;
+}
+
+.btn {
+    display: inline-block;
+    margin-left: 28%;
+}
+
+button {
+    margin-top: 5px;
+    padding: 7px 25px;
+    background-color: aqua;
+    border: 1px solid rgb(4, 129, 129);
+    border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.fa-user {
+    position: absolute;
+    top: 38px;
+    right: 90px;
+}
+
+.fa-eye {
+    position: absolute;
+    top: 79px;
+    right: 87px;
+}
+
+#icon2 {
+    position: absolute;
+    top: 79px;
+    right: 87px;
+}
+
+#icon2:hover {
+    cursor: pointer;
+}

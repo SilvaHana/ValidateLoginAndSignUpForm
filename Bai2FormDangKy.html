@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>FORM ĐĂNG KÝ</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='Styles/Bai2FormDangKy.css'>
+    <script src='JavaScript/Bai2FormDangKy.js'></script>
+    <script src="https://kit.fontawesome.com/3f53b3fc70.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="content" id="content" name="content">
+            <input type="text" id="username" name="username" placeholder="Tên đăng nhập" onkeyup="checkUser()" autocomplete="off" required>
+            <input type="email" id="email" name="email" placeholder="Nhập Email" onkeyup="ValidateEmail()" required>
+            <input type="password" id="pass1" name="pass1" placeholder="Mật khẩu" onkeyup="checkPass()" autocomplete="off" required><i onclick="OnOffPass1()" id="icon1" class="icon1 fa-solid fa-eye"></i>
+            <input type="password" id="pass2" name="pass2" placeholder="Nhập lại mật khẩu" onkeyup="checkPass()" autocomplete="off" required><i onclick="OnOffPass2()" id="icon2" class="icon2 fa-solid fa-eye"></i>
+        </div>
+        <p id="message"></p>
+        <div class="btn">
+            <input id="btn" type="button" value="Đăng ký" onclick="checkInput()">
+            <input id="btn" type="button" value="Reset" onclick="reset()">
+        </div>
+    </div>
+</body>
+</html>

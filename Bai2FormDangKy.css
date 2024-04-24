@@ -1,0 +1,106 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: white;
+}
+
+.container {
+    width: 500px;
+    min-height: 320px;
+    background-color: white;
+    border: 3px solid rgb(135, 172, 72);
+    border-radius: 50px;
+    position: relative;
+}
+
+.container::before {
+    content: 'FORM ĐĂNG KÝ';
+    color: rgb(114, 147, 59);
+    background-color: white;
+    position: absolute;
+    top: -13px;
+    left: 75px;
+    font-size: 20px;
+    font-weight: bold;
+    padding-inline: 10px 20px;
+}
+
+.content {
+    margin-top: 30px;
+}
+
+input {
+    border: 2px solid rgb(42, 42, 157);
+    border-radius: 5px;
+    color: black;
+    padding: 8px 10px;
+    margin-left: 29px;
+    margin-top: 10px;
+    width: 88%;
+    font-size: 14px;
+}
+
+::placeholder {
+    color: rgb(93, 126, 36);
+    opacity: 1;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    gap: 10px;
+    margin-top: 10px;
+    margin-inline: 70px;
+}
+
+.btn #btn:hover{
+    cursor: pointer;
+    background-color:rgb(136, 227, 72);
+    color: black;
+}
+
+.btn input {
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 7px 20px;
+    background-color:rgb(180, 235, 140);
+    color: rgb(99, 126, 53);
+    border: 2px solid rgb(42, 42, 157);
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+#message {
+    color: crimson;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.icon1 {
+    position: absolute;
+    right: 40px;
+    bottom: 155px;
+}
+
+.icon2 {
+    position: absolute;
+    right: 40px;
+    bottom: 110px;
+}
+
+.icon1,.icon2 {
+    cursor: pointer;
+    user-select: none;
+}
